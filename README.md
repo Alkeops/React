@@ -7,6 +7,7 @@
     - [Declarando variables](#declarando-variables)
       - [**Var**](#var)
       - [**Const**](#const)
+      - [**Let**](#let)
     - [Exports](#exports)
     - [Imports](#imports)
     - [Funciones](#funciones)
@@ -16,6 +17,11 @@
     - [Objetos](#objetos)
     - [Arrays](#arrays)
     - [Programación funcional](#programación-funcional)
+    - [Breve introduccion a node.js](#breve-introduccion-a-nodejs)
+      - [Instalación](#instalación)
+      - [nvm](#nvm)
+      - [npm](#npm)
+      - [pnpm](#pnpm)
   - [Github](#github)
     - [`git init`](#git-init)
     - [`git add`](#git-add)
@@ -24,13 +30,13 @@
     - [`git remote`](#git-remote)
     - [`git checkout`](#git-checkout)
     - [`git branch`](#git-branch)
-  - [SASS](#sass)
+  - [Sass](#sass)
     - [Uso con CRA](#uso-con-cra)
     - [Convenciones](#convenciones-1)
     - [Metodologias](#metodologias)
     - [Funciones y Mixins](#funciones-y-mixins)
     - [Complementando con css-vars](#complementando-con-css-vars)
-  - [REACT](#react)
+  - [React](#react)
     - [Iniciar un proyecto](#iniciar-un-proyecto)
     - [Convenciones](#convenciones-2)
     - [Uso de librerias externas](#uso-de-librerias-externas)
@@ -114,6 +120,8 @@ foo = "bar";
 ```
 
 _Los arrays y objetos declarados con const pueden ser modificados de ciertas formas_
+
+#### **Let**
 
 ### Exports
 
@@ -237,6 +245,16 @@ Anatomia de estos import:
 
 <hr />
 
+### Breve introduccion a node.js
+
+<hr />
+
+#### Instalación
+#### nvm
+#### npm
+#### pnpm
+
+
 ## Github
 
 [volver al indice](#indice)
@@ -269,7 +287,7 @@ Anatomia de estos import:
 
 <hr />
 
-## SASS
+## Sass
 
 ### Uso con CRA
 
@@ -295,7 +313,7 @@ Anatomia de estos import:
 
 <hr />
 
-## REACT
+## React
 
 [volver al indice](#indice)
 
@@ -381,6 +399,23 @@ Anatomia de estos import:
 
 <hr />
 
+### Proptypes
+
+<hr />
+
+### Deploy
+
+<hr />
+
+#### vercel
+#### heroku
+#### netlify
+
+
+### Styleguidist
+
+<hr />
+
 ### Patrones avanzados
 
 <hr />
@@ -402,5 +437,22 @@ Anatomia de estos import:
 <hr />
 
 
-## Typescript
+## Typescript en react
 [volver al indice](#indice)
+
+### Tipos
+
+<hr />
+
+### Interfaces
+
+<hr />
+
+### Genericos
+
+<hr />
+
+
+### Ventajas
+
+<hr />
