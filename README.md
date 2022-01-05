@@ -1,4 +1,5 @@
 # Motivaciones
+
 > Porque
 
 ## Indice
@@ -9,21 +10,63 @@
     - [Exports](#exports)
     - [Imports](#imports)
     - [Funciones](#funciones)
+    - [Timers](#timers)
     - [Convenciones](#convenciones)
     - [Asincronismo](#asincronismo)
     - [Objetos](#objetos)
     - [Arrays](#arrays)
     - [Programación funcional](#programación-funcional)
   - [Github](#github)
+    - [`git init`](#git-init)
+    - [`git add`](#git-add)
+    - [`git clone`](#git-clone)
+    - [`git push`](#git-push)
+    - [`git remote`](#git-remote)
+    - [`git checkout`](#git-checkout)
+    - [`git branch`](#git-branch)
   - [SASS](#sass)
+    - [Uso con CRA](#uso-con-cra)
+    - [Convenciones](#convenciones-1)
+    - [Metodologias](#metodologias)
+    - [Funciones y Mixins](#funciones-y-mixins)
+    - [Complementando con css-vars](#complementando-con-css-vars)
+  - [REACT](#react)
+    - [Iniciar un proyecto](#iniciar-un-proyecto)
+    - [Convenciones](#convenciones-2)
+    - [Uso de librerias externas](#uso-de-librerias-externas)
+      - [Bootstrap](#bootstrap)
+      - [Material Ui](#material-ui)
+      - [Classnames](#classnames)
+      - [Craco](#craco)
+      - [React-icons](#react-icons)
+    - [Componentes](#componentes)
+    - [React router dom](#react-router-dom)
+    - [Props](#props)
+    - [Ciclo de vida](#ciclo-de-vida)
+    - [useContext](#usecontext)
+    - [useState](#usestate)
+    - [useEffect](#useeffect)
+    - [useReducer](#usereducer)
+    - [useRef](#useref)
+    - [useMemo](#usememo)
+    - [Eventos](#eventos)
+    - [useCallback](#usecallback)
+    - [useLayoutEffect](#uselayouteffect)
+    - [useImperativeHandle](#useimperativehandle)
+    - [Custom hooks](#custom-hooks)
+    - [Patrones avanzados](#patrones-avanzados)
+    - [React.lazy](#reactlazy)
+    - [Testing con react-testing-library](#testing-con-react-testing-library)
+    - [Redux](#redux)
+    - [Virtual Dom](#virtual-dom)
+  - [Typescript](#typescript)
 
-## Javascript orientado a React 
+## Javascript orientado a React
+
 [volver al indice](#indice)
 <br />
 
 ### Declarando variables
-
-
 
 <hr />
 
@@ -39,7 +82,6 @@ var foo = "bar";
 
 #### **Const**
 
-
 Es la forma en que declaramos variables constantes en javascript. Datos sobre `const`:
 
 - Tiene un alcance de bloque, quiere decir que solo existe en el bloque que fue creada
@@ -51,7 +93,7 @@ const funcionFoo = () => {
 };
 funcionFoo();
 
-console.log(foo); /*Mostraria un error de referencias pues esta fuera de su scope, 
+console.log(foo); /*Mostraria un error de referencias pues esta fuera de su scope,
 si quisieramos usar ese valor deberiamos asignar el resultado de la funcion a otra variable. /*
 ```
 
@@ -134,7 +176,7 @@ import { bar } from "./bar.js";
 export { bar };
 ```
 
-_Tanto foo como bar han sido re-exportados de forma sencilla y deben ser importados con esos nombres y con el tipo de `import` adecuado._
+_bar fue re-exportado de forma sencilla y deben ser importados con ese nombre y con el tipo de `import` adecuado._
 
 [//]: <> (TODO agregar link al alias y al import)
 
@@ -171,6 +213,10 @@ Anatomia de estos import:
 
 <hr />
 
+### Timers
+
+<hr />
+
 ### Convenciones
 
 <hr />
@@ -180,25 +226,181 @@ Anatomia de estos import:
 <hr />
 
 ### Objetos
+
 <hr />
 
 ### Arrays
+
 <hr />
 
 ### Programación funcional
+
 <hr />
 
 ## Github
+
 [volver al indice](#indice)
+
+### `git init`
+
+<hr />
+
+### `git add`
+
+<hr />
+
+### `git clone`
+
+<hr />
+
+### `git push`
+
+<hr />
+
+### `git remote`
+
+<hr />
+
+### `git checkout`
+
+<hr />
+
+### `git branch`
 
 <hr />
 
 ## SASS
+
+### Uso con CRA
+
+<hr />
+
+### Convenciones
+
+<hr />
+
+### Metodologias
+
+<hr />
+
+### Funciones y Mixins
+
+<hr />
+
+### Complementando con css-vars
+
+<hr />
+
 [volver al indice](#indice)
 
 <hr />
 
 ## REACT
+
 [volver al indice](#indice)
 
+### Iniciar un proyecto
+
 <hr />
+
+### Convenciones
+
+<hr />
+
+### Uso de librerias externas
+
+<hr />
+
+#### Bootstrap
+
+#### Material Ui
+
+#### Classnames
+
+#### Craco
+
+#### React-icons
+
+### Componentes
+
+<hr />
+
+### React router dom
+
+<hr />
+
+### Props
+
+<hr />
+
+### Ciclo de vida
+
+<hr />
+
+### useContext
+
+<hr />
+
+### useState
+
+<hr />
+
+### useEffect
+
+<hr />
+
+### useReducer
+
+<hr />
+
+### useRef
+
+<hr />
+
+### useMemo
+
+<hr />
+
+### Eventos
+
+<hr />
+
+### useCallback
+
+<hr />
+
+### useLayoutEffect
+
+<hr />
+
+### useImperativeHandle
+
+<hr />
+
+### Custom hooks
+
+<hr />
+
+### Patrones avanzados
+
+<hr />
+
+### React.lazy
+
+<hr />
+
+### Testing con react-testing-library
+
+<hr />
+
+### Redux
+
+<hr />
+
+### Virtual Dom
+
+<hr />
+
+
+## Typescript
+[volver al indice](#indice)
