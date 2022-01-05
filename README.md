@@ -18,12 +18,12 @@
   - [SASS](#sass)
 
 ## Javascript orientado a React 
-
+[volver al indice](#indice)
 <br />
 
 ### Declarando variables
 
-[volver al indice](#indice)
+
 
 <hr />
 
@@ -33,11 +33,11 @@ Era el unico modo para declarar una variable, pero presentaba varios inconvenien
 
 ```js
 var foo = "bar";
-//Las variables declaradas con 'var' tienen un scope global a menos que fuese declarada dentro de una funcion
+/* Las variables declaradas con 'var' tienen un scope global
+ a menos que fuese declarada dentro de una funcion */
 ```
 
 #### **Const**
-[volver al indice](#indice)
 
 
 Es la forma en que declaramos variables constantes en javascript. Datos sobre `const`:
@@ -51,7 +51,8 @@ const funcionFoo = () => {
 };
 funcionFoo();
 
-console.log(foo); //Mostraria un error de referencias pues esta fuera de su scope, si quisieramos usar ese valor deberiamos asignar el resultado de la funcion a otra variable.
+console.log(foo); /*Mostraria un error de referencias pues esta fuera de su scope, 
+si quisieramos usar ese valor deberiamos asignar el resultado de la funcion a otra variable. /*
 ```
 
 - Solo pueden declararse una vez _(Dentro de su mismo scope)_
@@ -188,9 +189,16 @@ Anatomia de estos import:
 <hr />
 
 ## Github
+[volver al indice](#indice)
 
 <hr />
 
 ## SASS
+[volver al indice](#indice)
+
+<hr />
+
+## REACT
+[volver al indice](#indice)
 
 <hr />
