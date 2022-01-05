@@ -3,6 +3,7 @@
 > Porque
 
 ## Indice
+
   - [Javascript orientado a React](#javascript-orientado-a-react)
     - [Declarando variables](#declarando-variables)
       - [**Var**](#var)
@@ -11,6 +12,9 @@
     - [Exports](#exports)
     - [Imports](#imports)
     - [Funciones](#funciones)
+      - [Function declaration](#function-declaration)
+      - [Function expression](#function-expression)
+      - [Arrow function](#arrow-function)
     - [;](#)
     - [Timers](#timers)
     - [Convenciones](#convenciones)
@@ -87,12 +91,11 @@
 
 ## Javascript orientado a React
 
-[volver al indice](#indice)
+
 <br />
 
- ### Declarando variables 
-
-
+### Declarando variables
+[volver al indice](#indice)
 <hr />
 
 #### **Var**
@@ -149,41 +152,44 @@ Al igual que [**Const**](#const), **let** se utiliza en las aplicaciones moderna
 - Solo existe en su contexto:
 
 ```js
-if(esVerdad){ 
-  let foo = 'bar'
+if (esVerdad) {
+  let foo = "bar";
 }
-console.log(foo) //undefined
+console.log(foo); //undefined
 ```
+
 - Solo puede declararse una vez en un mismo scope
 
 ```js
-let foo = 'bar'
-let foo = 2 
-  //Identifier 'foo' has already been declared.
+let foo = "bar";
+let foo = 2;
+//Identifier 'foo' has already been declared.
 ```
 
 - Puede variar su valor y por lo tanto no necesita inicializarse
 
 ```js
 let foo;
-foo = 'bar';
+foo = "bar";
 
-console.log(foo) //'bar'
+console.log(foo); //'bar'
 ```
-<span style="color: red;"> **_TIP_** </span>
 
-> Puedes declarar varias variables usando una sola vez let  *No lo recomiendo si no se hace de la forma adecuada* -> Ver buenas practicas 
+**_TIP_**
+
+> Puedes declarar varias variables usando una sola vez let _No lo recomiendo si no se hace de la forma adecuada_ -> Ver buenas practicas
 
 ```js
-  //Sin inicializar
-  let foo,bar,stwart;
-  //Inicializando
-  let foo='hello', bar='world', stwart='little';
+//Sin inicializar
+let foo, bar, stuart;
+//Inicializando
+let foo = "hello",
+  bar = "world",
+  stuart = "little";
 ```
 
-
 ### Exports
-
+[volver al indice](#indice)
 <hr />
 
 Con **export** podemos exportar funciones, objetos o tipos de datos para que despues puedan ser importados con [imports](#imports)
@@ -195,18 +201,17 @@ Básicamente existen dos tipos de exportaciones:
 - Export sencillo
 
 ```js
-export const foo = 'bar';
+export const foo = "bar";
 
-export let foo = 'bar';
+export let foo = "bar";
 
-export class Clase{}
+export class Clase {}
 
 //Usando algo declarado previamente
 
-const pin =  1234;
+const pin = 1234;
 
-export { pin }
-
+export { pin };
 ```
 
 Este tipo de export es obligatorio importarlo con el nombre correspondiente. _Se le puede agregar un alias_
@@ -248,7 +253,7 @@ _bar fue re-exportado de forma sencilla y deben ser importados con ese nombre y 
 [//]: <> (TODO agregar link al alias y al import)
 
 ### Imports
-
+[volver al indice](#indice)
 <hr />
 
 Con **import** podemos importar funciones, objetos o tipos de datos que fueron efectivamente exportados con [export](#exports)
@@ -277,8 +282,69 @@ Anatomia de estos import:
 - `'bar.js'` ruta al archivo
 
 ### Funciones
-
+[volver al indice](#indice)
 <hr />
+
+#### Function declaration
+
+Se _declara_ una funcion con la palabra reservada `function`
+
+```js
+function multiply(a, b) {
+  return a * b;
+}
+```
+
+#### Function expression
+
+Se almacena la funcion en una variable, su principal ventaja y desventaja a la vez es que no puede ser usada hasta ser declarada, por lo tanto evitamos comportamientos inesperados.
+
+```js
+multiply(2, 3); // No definida
+const multiply = function (a, b) {
+  return a * b;
+};
+multiply(2, 3); // 6
+```
+
+#### Arrow function
+
+Las `arrow functions` siempre son anonimas, tambien se pueden asignar a una variable o usarse como callback. `() => {}`
+
+```js
+const multiply = (a, b) => {
+  return a * b;
+};
+
+multiply(2, 3); //6
+
+/* El retorno en las arrow function puede ser implicito
+siempre que se vaya a retornar algo inmediatamente
+y no se vaya a agregar otra logica */
+
+const multiply = (a, b) => a * b;
+
+multiply(2, 3); // 6
+
+/* Si solo recibe un parametro se pueden omitir
+los parentesis */
+
+const upName = (name) => name.toUpperCase();
+upName("Fulano"); // 'FULANO'
+
+/* Y son muy utiles para usar como callback */
+
+otraFuncion(() => console.log('Hola'));
+
+//otraFuncion solo espera un callback como parametro
+
+/* Si solo se quiere retornar un objeto, este
+se envuelve con parentesis */
+
+const objectG = () => ({ title: "El hijo del consul", precio: 300 });
+
+objectG(); //{title: 'El hijo del consul', precio: 300}
+```
 
 ### ;
 
@@ -325,10 +391,12 @@ Anatomia de estos import:
 <hr />
 
 #### Instalación
-#### nvm
-#### npm
-#### pnpm
 
+#### nvm
+
+#### npm
+
+#### pnpm
 
 ## Github
 
@@ -483,9 +551,10 @@ Anatomia de estos import:
 <hr />
 
 #### vercel
-#### heroku
-#### netlify
 
+#### heroku
+
+#### netlify
 
 ### Styleguidist
 
@@ -499,8 +568,6 @@ Anatomia de estos import:
 
 <hr />
 
-
-
 ### Testing con react-testing-library
 
 <hr />
@@ -513,8 +580,8 @@ Anatomia de estos import:
 
 <hr />
 
-
 ## Typescript en react
+
 [volver al indice](#indice)
 
 ### Tipos
@@ -529,15 +596,16 @@ Anatomia de estos import:
 
 <hr />
 
-
 ### Ventajas
 
 <hr />
 
 ## VSCode 2022
+
 [volver al indice](#indice)
 
-
 ### Plugins
+
 ### Temas
+
 ### Configs
