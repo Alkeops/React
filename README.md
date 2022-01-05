@@ -60,12 +60,26 @@
     - [useLayoutEffect](#uselayouteffect)
     - [useImperativeHandle](#useimperativehandle)
     - [Custom hooks](#custom-hooks)
+    - [Proptypes](#proptypes)
+    - [Deploy](#deploy)
+      - [vercel](#vercel)
+      - [heroku](#heroku)
+      - [netlify](#netlify)
+    - [Styleguidist](#styleguidist)
     - [Patrones avanzados](#patrones-avanzados)
     - [React.lazy](#reactlazy)
     - [Testing con react-testing-library](#testing-con-react-testing-library)
     - [Redux](#redux)
     - [Virtual Dom](#virtual-dom)
-  - [Typescript](#typescript)
+  - [Typescript en react](#typescript-en-react)
+    - [Tipos](#tipos)
+    - [Interfaces](#interfaces)
+    - [Genericos](#genericos)
+    - [Ventajas](#ventajas)
+  - [VSCode 2022](#vscode-2022)
+    - [Plugins](#plugins)
+    - [Temas](#temas)
+    - [Configs](#configs)
 
 ## Javascript orientado a React
 
@@ -424,6 +438,8 @@ Anatomia de estos import:
 
 <hr />
 
+
+
 ### Testing con react-testing-library
 
 <hr />
@@ -456,3 +472,11 @@ Anatomia de estos import:
 ### Ventajas
 
 <hr />
+
+## VSCode 2022
+[volver al indice](#indice)
+
+
+### Plugins
+### Temas
+### Configs
