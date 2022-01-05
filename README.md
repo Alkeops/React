@@ -11,12 +11,16 @@
     - [Exports](#exports)
     - [Imports](#imports)
     - [Funciones](#funciones)
+    - [;](#)
     - [Timers](#timers)
     - [Convenciones](#convenciones)
     - [Asincronismo](#asincronismo)
+    - [Desestructuración](#desestructuración)
     - [Objetos](#objetos)
     - [Arrays](#arrays)
+    - [Buenas practicas](#buenas-practicas)
     - [Programación funcional](#programación-funcional)
+    - [Condicionales](#condicionales)
     - [Breve introduccion a node.js](#breve-introduccion-a-nodejs)
       - [Instalación](#instalación)
       - [nvm](#nvm)
@@ -86,7 +90,8 @@
 [volver al indice](#indice)
 <br />
 
-### Declarando variables
+ ### Declarando variables 
+
 
 <hr />
 
@@ -137,6 +142,46 @@ _Los arrays y objetos declarados con const pueden ser modificados de ciertas for
 
 #### **Let**
 
+> Variables ¿variables?
+
+Al igual que [**Const**](#const), **let** se utiliza en las aplicaciones modernas para declarar variables y tiene alcance de bloque. Datos sobre `let`:
+
+- Solo existe en su contexto:
+
+```js
+if(esVerdad){ 
+  let foo = 'bar'
+}
+console.log(foo) //undefined
+```
+- Solo puede declararse una vez en un mismo scope
+
+```js
+let foo = 'bar'
+let foo = 2 
+  //Identifier 'foo' has already been declared.
+```
+
+- Puede variar su valor y por lo tanto no necesita inicializarse
+
+```js
+let foo;
+foo = 'bar';
+
+console.log(foo) //'bar'
+```
+<span style="color: red;"> **_TIP_** </span>
+
+> Puedes declarar varias variables usando una sola vez let  *No lo recomiendo si no se hace de la forma adecuada* -> Ver buenas practicas 
+
+```js
+  //Sin inicializar
+  let foo,bar,stwart;
+  //Inicializando
+  let foo='hello', bar='world', stwart='little';
+```
+
+
 ### Exports
 
 <hr />
@@ -152,7 +197,7 @@ Básicamente existen dos tipos de exportaciones:
 ```js
 export const foo = 'bar';
 
-export let foo = 'bar;
+export let foo = 'bar';
 
 export class Clase{}
 
@@ -235,6 +280,10 @@ Anatomia de estos import:
 
 <hr />
 
+### ;
+
+<hr />
+
 ### Timers
 
 <hr />
@@ -247,6 +296,10 @@ Anatomia de estos import:
 
 <hr />
 
+### Desestructuración
+
+<hr />
+
 ### Objetos
 
 <hr />
@@ -255,7 +308,15 @@ Anatomia de estos import:
 
 <hr />
 
+### Buenas practicas
+
+<hr />
+
 ### Programación funcional
+
+<hr />
+
+### Condicionales
 
 <hr />
 
