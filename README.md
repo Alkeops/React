@@ -15,6 +15,7 @@
       - [Function declaration](#function-declaration)
       - [Function expression](#function-expression)
       - [Arrow function](#arrow-function)
+      - [Parametros de función](#parametros-de-funcion)
     - [;](#)
     - [Timers](#timers)
     - [Convenciones](#convenciones)
@@ -344,6 +345,36 @@ se envuelve con parentesis */
 const objectG = () => ({ title: "El hijo del consul", precio: 300 });
 
 objectG(); //{title: 'El hijo del consul', precio: 300}
+```
+
+#### Parametros de función
+
+Una función es una porcion de codigo que es independiente al resto
+del programa, algo asi como una "plantilla" para usarla posteriormente.
+Estas reciben ( o no ) parametros , estos parametros son variables y
+pueden llamarse con cualquier nombre (*siempre que no sean palabras reservadas*).
+```js
+//Parametros de addTwoNumbers => n1 , n2
+const addTwoNumbers = (n1, n2) => n1 + n2
+//Funciona exactamente igual pero los llamamos number1 y number2
+const addTwoNumbers = (number1, number2) => number1 + number2
+/* Para constatar se pueden llamar de cualquier forma, 
+seria confuso pero posible por que no sabemos si se van a 
+concatenar strings o sumar numeros o agendar una fiesta */
+const addTwoNumbers = (tequila, casita) => tequila + casita
+```
+Al llamar la funcion los parametros se pasan en el orden que se establecieron al crear la funcion
+```js
+addTwoNumbers(2,4) //6
+//2 seria n1 y 6 n2
+```
+Si quisieramos que el orden no importara, podemos establecer que los parametros sean un objeto. (Ver desestructuración )
+
+[//]: <> (TODO agregar link a desestructuración)
+
+```js
+const addTwoNumbers = ({numero1, numero2}) => numero1 + numero2
+addTwoNumbers({numero1: 2, numero2: 4}) //6
 ```
 
 ### ;
